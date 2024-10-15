@@ -1,0 +1,34 @@
+Where do these functions appear in the code?
+
+
+besmuddle_data -- in main.m with user input (1/2/3, data) adds some intentional baseline to model
+
+celledit -- in Lmodel.m, Gmodel.m, GLmodel.m to enable blockwise (de-)activation of optimization parameters
+
+findMinima2 -- (was replaced by successor) in Spliner.m as the actual function determining the peaks in .findInitPeakInfo in findStartSpec4 with
+
+findMinima3 -- (replaced predecessor) in Spliner.m as the actual function determining the peaks in .findInitPeakInfo in findStartSpec4 
+
+findStartSpec4 -- in Spliner.m as the peak-determining function in .findInitPeakInfo
+
+my_closereq -- in Lmodel.m, Gmodel.m, GLmodel.m as a certain closing operator for the parameter GUI in .showpara
+
+mysg -- same as sg, but used and easier to understand
+
+mysgfilt -- same as sgfilt, but used and easier to understand
+
+Phase_corrections_test -- unused, but gives information on how to besmuddle data with incorrect phasing
+
+compare_results -- unused in main, only used for comparisons in sigtrack-paper
+
+prob_test2 -- currently unused predecessor of
+
+prob_test3 -- in Spliner.m, aids in creating probable peak positions for optimization variants
+
+ResVec -- currently unused, sums up rows of model.RES to presumably lower dimensions
+
+smuddlephase_data -- in main.m with user input (1/2/3, data) phases data intentionally incorrectly
+
+SplineGridGUI_bunt -- in main.m with user input finds Tsidx, special time layers for spline knots
+
+wasserstein -- in Spliner.m, provides an extra metric for model quality, calculates Wasserstein-metric
