@@ -9,3 +9,11 @@ Loading data sets: Requires a phase and baseline-corrected data set as a .mat fi
  -- The data, called 'd' or 'D'
  -- The frequency axis, called 'x' or 'X'
  -- The time axis, called 't' or 'T'.
+
+ Then, create new file for loading data, which can be copied and pasted from existing files and add it to file section in main.m.
+
+ Set hyperparameters in options section (not necessary, but incorrect definition of hyperparamters leads to incorrect results).
+
+ Then, run main in desired variant.
+
+ Results can be saved, if 'opt.isSaveFile = 1;'
